@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- <meta property="og:type" /> -->
+		<meta property="og:site_name" content="양현석" />
+		<meta property="og:title" content="citizen developer HTML/CSS mini project" />
+		<!-- <meta property="og:description" /> -->
+		<meta property="og:image" content = https://images.samsung.com/kdp/aboutsamsung/brand_identity/logo/720_600_1.png />
+
+		<title>양현석_실습과제_230308</title>
+		<style>
+			.sticky{
+            background-color:antiquewhite;
+            position:sticky;
+            top:0px;
+        }
+		</style>
+
+		<link rel="stylesheet" />
+
+		<link rel="icon" />
+
+		<!-- Favicon -->
+		<link rel="icon" sizes=72x72 href="./android-icon-72x72.png">
+
+		<!-- Google 웹 폰트 : Black Han Sans -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cute+Font&display=swap" rel="stylesheet">
+        
+        <style>
+			@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cute+Font&display=swap');
+			* { font-family: 'Black Han Sans', sans-serif;}
+
+		</style>
+	</head>
+	<body>
+		<!-- Sticky Navigation bar -->
+		<nav class="navbar sticky">
+			<div class="container">
+				<a> Hello </a>
+				<a href="#expertise">경력</a>
+				<a href="#hobby">취미</a>
+				<a href="#etc">기타</a>
+			</div>
+		</nav>
+
+		<div class="container">
+			<header class="bootstrap-header lh-1 py-3">
+				<div class="row flex-nowrap justify-content-between align-items-center">
+					<h1 class="text-left">
+						<!-- 추후 문서 상단에서의 책갈피 역할을 합니다. Id 태그를 넣어줍니다.-->
+						<a id = "moveToTop" class="bootstrap-header-logo text-dark" href="#"
+							>안녕하세요. 반갑습니다</a
+						>👋
+					</h1>
+				</div>
+			</header>
+		</div>
+
+		<main class="container">
+			<div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+				<div class="col-md-6 px-0">
+					<h1 class="display-7" style="background-color: blue;">
+						Bootstrap을 활용해 퍼스널 브랜딩 페이지 만들기
+					</h1>
+					<p class="lead my-3" style="background-color:bisque">
+						Samsung x Fast Campus citizen developer 양성 과정 ('23년 3차')
+					</p>
+					<!-- h4 태그 -->
+					<h4 style="text-align: center;">special thanks to 장현석 강사님</h4>
+				</div>
+			</div>
+
+			<div class="row mb-2">
+				<div class="col-md-4">
+					<div
+						class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative"
+					>
+						<div class="col p-4 d-flex flex-column position-static">
+							<h3 Id="expertise" class="mb-0">경력</h3>
+							<a class="stretched-link">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row g-5">
+				<div class="col-md-8">
+					<article id="experience" class="bootstrap-post" style="text-align: center;">
+						<h2 class="bootstrap-post-title mb-1">🧳 경력</h2>
+						<h3 class="bootstrap-post-title mb-1" style="color: maroon;">지금이 바로 전성기</h3>
+						<p style="text-align: center;">
+							<!-- ol 태그 -->
+							<ol style="text-align: center; display: inline-block;">
+								<li>이거 듣고 연봉 100배!!</li>
+								<li>삼성전자 입사</li>
+								<li>대학 졸업</li>
+							</ol>
+						</p>
+					</article>
+					
+
+					<article id="hobby" class="bootstrap-post" style="text-align: center;">
+						<h2 class="bootstrap-post-title mb-1">🧗🏻‍♀️ 취미</h2>
+						<!-- h3 태그 -->
+						<h3 class="bootstrap-post-title mb-1" style="color:maroon">취미 수집은 현재 진행형</h3>
+						<p style="text-align: center;">
+							<!-- ul 태그 -->
+							<ul style="text-align: center; display: inline-block;">
+								<li>이거 듣고 웹페이지 개발이 취미가 되었습니다</li>
+								<li>디제잉</li>
+								<li>통계 공부</li>
+							</ul>
+						</p>
+					</article>
+
+					<article id="etc" class="bootstrap-post" style="text-align:center;">
+						<h2 class="bootstrap-post-title mb-1">😀 기타</h2>
+						<h3 style="color: maroon">유익한 교육 감사합니다.</h3>
+						<!-- h4 태그 -->
+						<h4>CARPE DIEM</h4>
+						<p>아직도<mark>다양한 태그</mark>들이 남았답니다.</p>
+						<p>
+							<a
+								href="https://developer.mozilla.org/ko/docs/Web/HTML/Element"
+								target="_blank"
+								>여기에서</a
+							>
+							더 다양한 태그들을 확인해보시고 간단하게 사용해보세요
+						</p>
+						<p>
+							이미 만들어진 간단한 부트스트랩 스타일을 사용하고 싶다면?
+							<a href="https://getbootstrap.com" target="_blank">
+								부스트스트랩 문서를 참고해보세요
+							</a>
+						</p>
+					</article>
+				</div>
+
+
+				<div class="col-md-4">
+					<div class="position-sticky" style="top: 2rem;">
+						<div class="p-4 mb-3 bg-light rounded" style="text-align: center;">
+							<h4>About</h4>
+							<br />
+							<h4 style="background-color: chocolate;">좋은 하루 되세요</h4>
+							<p>DL을 활용하여 리스트를 표현해보세요</p>
+							<dl style="background-color: darkgoldenrod;">
+								<dt>HyperText Markup Language (HTML)</dt>
+								<dd>HTML은 웹에서 읽을 수 있는 문서입니다.</dd>
+								<dt>Cascading Style Sheets (CSS)</dt>
+								<dd>CSS는 HTML의 format을 지정해 주는 언어입니다.</dd>
+								<dt>JavaScript (JS)</dt>
+								<dd>JS는 HTML/CSS의 기반이 되는 인터프리터 언어입니다.</dd>
+							</dl>
+
+						</div>
+
+						<div class="p-4" style="text-align:center;  background-color: aquamarine;">
+							<h4>Social</h4>
+							<!-- a 태그 : 메일 보내기 -->
+							<button type="button" class="btn btn-success" style="background-color: green;"><a href="mailto:odiehs@naver.com?body=양현석 실습과제입니다.">메일 보내기</a></button>
+							<br />
+							<!-- a 태그 : 전화 걸기 -->
+							<button type="button" class="btn btn-success" style="background-color: green;"><a href="tel:010-2824-4866">전화 걸기</a></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="bootstrap-footer">
+			<p>
+				template built for
+				<a href="https://getbootstrap.com/">Bootstrap</a>
+			</p>
+			<p>
+				<!-- Id 지정을 통한 위치 이동 -->
+				<a href="#moveToTop">Back to top</a>
+			</p>
+		</footer>
+	</body>
+</html>
